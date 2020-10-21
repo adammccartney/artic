@@ -1,6 +1,5 @@
 artic
 =====
-[![Build Status](https://travis-ci.org/adammccartney/artic.svg?branch=master)](https://travis-ci.org/adammccartney/artic)
 
 For violin, monosynth and polysynth. 
 
