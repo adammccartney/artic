@@ -1,0 +1,20 @@
+language: python
+
+python:
+    - 3.7
+
+before_install:
+    - wget -q http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.19.65-1.linux-64.sh
+    - sudo sh lilypond-2.19.65-1.linux-64.sh --batch
+    - pip install --upgrade pip
+
+install:
+    - pip install abjad 
+    - pip install abjad-ext-rmakers
+    - pip install -e .
+
+script:
+    - py.test -xrf ./artic
+
+notifications:
+    email: false
